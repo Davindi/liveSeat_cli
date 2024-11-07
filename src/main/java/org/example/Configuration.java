@@ -47,5 +47,13 @@ public class Configuration implements Serializable {
         this.maxTicketCapacity = maxTicketCapacity;
     }
 
-
+    @Override
+    public String toString() {
+        return "Configuration{" +
+                "totalTickets=" + totalTickets +
+                ", ticketReleaseRate=" + ticketReleaseRate +
+                ", customerRetrievalRate=" + customerRetrievalRate +
+                ", maxTicketCapacity=" + maxTicketCapacity +
+                '}';
+    }
 }
